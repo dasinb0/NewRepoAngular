@@ -1,0 +1,21 @@
+<header class="header">
+    <div class="container">
+      <div class="logo">
+        <a routerLink="/sobre-mi">
+          <img src="assets/images/dslogor.png" alt="Diego Sani Logo">
+        </a>
+      </div>
+      <nav class="nav-menu">
+        <ul>
+          <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a></li>
+          <li><a routerLink="/sobre-mi" routerLinkActive="active">Sobre Mi</a></li>
+          <li><a routerLink="/experiencia" routerLinkActive="active">Experiencia</a></li>
+          <li><a routerLink="/servicios" routerLinkActive="active">Servicios</a></li>
+          <li><a routerLink="/contacto" routerLinkActive="active">Contacto</a></li>
+        </ul>
+      </nav>
+      <button class="mobile-nav-toggle" (click)="toggleMenu()">
+        <span class="material-icons">menu</span>
+      </button>
+    </div>
+  </header>
