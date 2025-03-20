@@ -1,7 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+
+declare global {
+  interface Window {
+    gtag: (...args: any[]) => void;
+  }
+}
 
 @Component({
   selector: 'app-root',
@@ -12,4 +18,14 @@ import { FooterComponent } from './components/footer/footer.component';
 })
 export class AppComponent {
   title = 'newPortfolio';
+
+  constructor(private router: Router) {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        if (typeof window.gtag !== 'undefined') {
+          window.gtag('event', 'page_view', { page_path: event.urlAfterRedirects });
+        }
+      }
+    });
+  }
 }
