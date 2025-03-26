@@ -6,6 +6,7 @@ import { FooterComponent } from './components/footer/footer.component';
 declare global {
   interface Window {
     gtag: (...args: any[]) => void;
+    dataLayer: any[];
   }
 }
 
@@ -22,8 +23,19 @@ export class AppComponent {
   constructor(private router: Router) {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
+        // Para Google Analytics
         if (typeof window.gtag !== 'undefined') {
           window.gtag('event', 'page_view', { page_path: event.urlAfterRedirects });
+        }
+        
+        // Para Google Tag Manager
+        if (window.dataLayer) {
+          window.dataLayer.push({
+            event: 'pageview',
+            page: {
+              path: event.urlAfterRedirects
+            }
+          });
         }
       }
     });
