@@ -1,8 +1,8 @@
 <section class="page-header">
   <div class="container">
-    <h1 class="page-title">Contacto</h1>
+    <h1 class="page-title">{{ 'CONTACT.TITLE' | translate }}</h1>
     <div class="breadcrumb">
-      <a routerLink="/">Home</a> <span>/</span> <span>Contacto</span>
+      <a routerLink="/">{{ 'MENU.HOME' | translate }}</a> <span>/</span> <span>{{ 'CONTACT.TITLE' | translate }}</span>
     </div>
   </div>
 </section>
@@ -10,8 +10,8 @@
 <section class="contact-section section">
   <div class="container">
     <div class="contact-heading text-center">
-      <h2 class="section-title">¡Hablemos de tu Proyecto!</h2>
-      <p class="section-subtitle">Estoy disponible para proyectos freelance, colaboraciones o consultas.</p>
+      <h2 class="section-title">{{ 'CONTACT.SUBTITLE' | translate }}</h2>
+      <p class="section-subtitle">{{ 'CONTACT.DESCRIPTION' | translate }}</p>
     </div>
     
     <div class="contact-container">
@@ -21,8 +21,8 @@
             <i class="fas fa-map-marker-alt"></i>
           </div>
           <div class="info-content">
-            <h3>Ubicación</h3>
-            <p>Ciudad de Buenos Aires, Argentina</p>
+            <h3>{{ 'CONTACT.LOCATION' | translate }}</h3>
+            <p>{{ 'CONTACT.LOCATION_VALUE' | translate }}</p>
           </div>
         </div>
         
@@ -31,7 +31,7 @@
             <i class="fas fa-envelope"></i>
           </div>
           <div class="info-content">
-            <h3>Email</h3>
+            <h3>{{ 'CONTACT.EMAIL' | translate }}</h3>
             <p>d.sani&#64;hotmail.com</p>
           </div>
         </div>
@@ -41,7 +41,7 @@
             <i class="fas fa-phone-alt"></i>
           </div>
           <div class="info-content">
-            <h3>Teléfono</h3>
+            <h3>{{ 'CONTACT.PHONE' | translate }}</h3>
             <p>+54 11 6965 0855</p>
           </div>
         </div>
@@ -51,13 +51,13 @@
             <i class="fas fa-clock"></i>
           </div>
           <div class="info-content">
-            <h3>Horario</h3>
-            <p>Lun - Vie: 7:00 AM - 6:00 PM</p>
+            <h3>{{ 'CONTACT.SCHEDULE' | translate }}</h3>
+            <p>{{ 'CONTACT.SCHEDULE_VALUE' | translate }}</p>
           </div>
         </div>
         
         <div class="social-links">
-          <h3>Sígueme en</h3>
+          <h3>{{ 'CONTACT.FOLLOW_ME' | translate }}</h3>
           <div class="social-icons">
             <a href="https://github.com/dasinb0" target="_blank" aria-label="GitHub">
               <i class="fab fa-github"></i>
@@ -77,7 +77,7 @@
       
       <!-- FormSubmit -->
       <div class="contact-form animate">
-        <h3>Envíame un mensaje</h3>
+        <h3>{{ 'CONTACT.SEND_MESSAGE' | translate }}</h3>
         <form (ngSubmit)="onSubmit()" [formGroup]="contactForm" action="https://formsubmit.co/019b2ecdca18731e4ff92deade31770d" method="POST" #formSubmit>
           <input type="hidden" name="_next" value="https://diego-sani.netlify.app">
           <input type="hidden" name="_captcha" value="false">
@@ -85,73 +85,73 @@
           <input type="hidden" name="_template" value="table">
           
           <div class="form-group">
-            <label for="name">Nombre completo</label>
+            <label for="name">{{ 'CONTACT.FULL_NAME' | translate }}</label>
             <input 
               type="text" 
               id="name" 
               name="name"
               formControlName="name" 
-              placeholder="Tu nombre"
+              placeholder="{{ 'CONTACT.NAME_PLACEHOLDER' | translate }}"
               [ngClass]="{'invalid-input': submitted && f['name'].errors}"
             >
             <div *ngIf="submitted && f['name'].errors" class="error-message">
-              <span *ngIf="f['name'].errors['required']">El nombre es obligatorio</span>
+              <span *ngIf="f['name'].errors['required']">{{ 'CONTACT.NAME_REQUIRED' | translate }}</span>
             </div>
           </div>
           
           <div class="form-group">
-            <label for="email">Email</label>
+            <label for="email">{{ 'CONTACT.EMAIL_LABEL' | translate }}</label>
             <input 
               type="email" 
               id="email" 
               name="email"
               formControlName="email" 
-              placeholder="Tu email"
+              placeholder="{{ 'CONTACT.EMAIL_PLACEHOLDER' | translate }}"
               [ngClass]="{'invalid-input': submitted && f['email'].errors}"
             >
             <div *ngIf="submitted && f['email'].errors" class="error-message">
-              <span *ngIf="f['email'].errors['required']">El email es obligatorio</span>
-              <span *ngIf="f['email'].errors['email']">Introduce un email válido</span>
+              <span *ngIf="f['email'].errors['required']">{{ 'CONTACT.EMAIL_REQUIRED' | translate }}</span>
+              <span *ngIf="f['email'].errors['email']">{{ 'CONTACT.EMAIL_INVALID' | translate }}</span>
             </div>
           </div>
           
           <div class="form-group">
-            <label for="subject">Asunto</label>
+            <label for="subject">{{ 'CONTACT.SUBJECT' | translate }}</label>
             <input 
               type="text" 
               id="subject" 
               name="subject"
               formControlName="subject" 
-              placeholder="Asunto del mensaje"
+              placeholder="{{ 'CONTACT.SUBJECT_PLACEHOLDER' | translate }}"
               [ngClass]="{'invalid-input': submitted && f['subject'].errors}"
             >
             <div *ngIf="submitted && f['subject'].errors" class="error-message">
-              <span *ngIf="f['subject'].errors['required']">El asunto es obligatorio</span>
+              <span *ngIf="f['subject'].errors['required']">{{ 'CONTACT.SUBJECT_REQUIRED' | translate }}</span>
             </div>
           </div>
           
           <div class="form-group">
-            <label for="message">Mensaje</label>
+            <label for="message">{{ 'CONTACT.MESSAGE' | translate }}</label>
             <textarea 
               id="message"
               name="message" 
               formControlName="message" 
               rows="5" 
-              placeholder="Tu mensaje"
+              placeholder="{{ 'CONTACT.MESSAGE_PLACEHOLDER' | translate }}"
               [ngClass]="{'invalid-input': submitted && f['message'].errors}"
             ></textarea>
             <div *ngIf="submitted && f['message'].errors" class="error-message">
-              <span *ngIf="f['message'].errors['required']">El mensaje es obligatorio</span>
+              <span *ngIf="f['message'].errors['required']">{{ 'CONTACT.MESSAGE_REQUIRED' | translate }}</span>
             </div>
           </div>
           
           <button type="submit" class="btn btn-primary submit-btn" [disabled]="loading">
-            <span *ngIf="!loading">Enviar Mensaje</span>
-            <span *ngIf="loading">Enviando... <i class="fas fa-spinner fa-spin"></i></span>
+            <span *ngIf="!loading">{{ 'CONTACT.SUBMIT' | translate }}</span>
+            <span *ngIf="loading">{{ 'CONTACT.SENDING' | translate }} <i class="fas fa-spinner fa-spin"></i></span>
           </button>
           
           <div *ngIf="success" class="success-message">
-            ¡Mensaje enviado con éxito! Me pondré en contacto contigo pronto.
+            {{ 'CONTACT.SUCCESS_MESSAGE' | translate }}
           </div>
         </form>
       </div>
