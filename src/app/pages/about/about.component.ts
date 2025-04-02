@@ -47,7 +47,7 @@ export class AboutComponent implements OnInit {
 
   constructor(
     private translateService: TranslateService,
-    public languageService: LanguageService
+    public languageService: LanguageService,
   ) {}
 
   ngOnInit() {

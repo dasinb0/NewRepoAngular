@@ -1,14 +1,13 @@
-// header.component.ts
-import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';import { Component, OnInit } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { LanguageService } from '../../services/language.service';
+import { ThemeToggleComponent } from '../theme-toggle/theme-toggle.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterLink, RouterLinkActive, CommonModule, TranslateModule],
+  imports: [RouterLink, RouterLinkActive, CommonModule, TranslateModule, ThemeToggleComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })

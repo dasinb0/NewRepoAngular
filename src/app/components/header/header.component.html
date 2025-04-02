@@ -17,6 +17,9 @@
             {{ languageService.getCurrentLanguage() === 'es' ? 'EN' : 'ES' }}
           </button>
         </li>
+        <li class="theme-toggle">
+          <app-theme-toggle></app-theme-toggle>
+        </li>
       </ul>
     </nav>
     <button class="mobile-nav-toggle" (click)="toggleMenu()" [class.active]="isMenuOpen">
