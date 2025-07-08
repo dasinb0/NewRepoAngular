@@ -12,7 +12,7 @@
     <h2 class="section-title">{{ 'EXPERIENCE.WORK_EXPERIENCE' | translate }}</h2>
     
     <div class="experience-timeline">
-      <div class="timeline-item animate">
+        <div class="timeline-item animate">
         <div class="timeline-dot"></div>
         <div class="timeline-date">{{ 'EXPERIENCE.JOB1_PERIOD' | translate }}</div>
         <div class="timeline-content">
@@ -21,6 +21,26 @@
           <p>{{ 'EXPERIENCE.JOB1_DESCRIPTION' | translate }}</p>
           <ul class="responsibilities">
             <li *ngFor="let responsibility of experienceTranslations.job1Responsibilities">{{ responsibility }}</li>
+          </ul>
+          <div class="tech-stack">
+            <span>VueJs</span>
+            <span>NodeJs</span>
+            <span>MongoDB</span>
+            <span>LLM</span>
+            <span>Github</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item animate">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">{{ 'EXPERIENCE.JOB2_PERIOD' | translate }}</div>
+        <div class="timeline-content">
+          <h3>{{ 'EXPERIENCE.JOB2_TITLE' | translate }}</h3>
+          <h4>{{ 'EXPERIENCE.JOB2_COMPANY' | translate }}</h4>
+          <p>{{ 'EXPERIENCE.JOB2_DESCRIPTION' | translate }}</p>
+          <ul class="responsibilities">
+            <li *ngFor="let responsibility of experienceTranslations.job2Responsibilities">{{ responsibility }}</li>
           </ul>
           <div class="tech-stack">
             <span>Angular</span>
@@ -34,13 +54,13 @@
       
       <div class="timeline-item animate">
         <div class="timeline-dot"></div>
-        <div class="timeline-date">{{ 'EXPERIENCE.JOB2_PERIOD' | translate }}</div>
+        <div class="timeline-date">{{ 'EXPERIENCE.JOB3_PERIOD' | translate }}</div>
         <div class="timeline-content">
-          <h3>{{ 'EXPERIENCE.JOB2_TITLE' | translate }}</h3>
-          <h4>{{ 'EXPERIENCE.JOB2_COMPANY' | translate }}</h4>
-          <p>{{ 'EXPERIENCE.JOB2_DESCRIPTION' | translate }}</p>
+          <h3>{{ 'EXPERIENCE.JOB3_TITLE' | translate }}</h3>
+          <h4>{{ 'EXPERIENCE.JOB3_COMPANY' | translate }}</h4>
+          <p>{{ 'EXPERIENCE.JOB3_DESCRIPTION' | translate }}</p>
           <ul class="responsibilities">
-            <li *ngFor="let responsibility of experienceTranslations.job2Responsibilities">{{ responsibility }}</li>
+            <li *ngFor="let responsibility of experienceTranslations.job3Responsibilities">{{ responsibility }}</li>
           </ul>
           <div class="tech-stack">
             <span>Angular</span>
@@ -54,13 +74,13 @@
       
       <div class="timeline-item animate">
         <div class="timeline-dot"></div>
-        <div class="timeline-date">{{ 'EXPERIENCE.JOB3_PERIOD' | translate }}</div>
+        <div class="timeline-date">{{ 'EXPERIENCE.JOB4_PERIOD' | translate }}</div>
         <div class="timeline-content">
-          <h3>{{ 'EXPERIENCE.JOB3_TITLE' | translate }}</h3>
-          <h4>{{ 'EXPERIENCE.JOB3_COMPANY' | translate }}</h4>
-          <p>{{ 'EXPERIENCE.JOB3_DESCRIPTION' | translate }}</p>
+          <h3>{{ 'EXPERIENCE.JOB4_TITLE' | translate }}</h3>
+          <h4>{{ 'EXPERIENCE.JOB4_COMPANY' | translate }}</h4>
+          <p>{{ 'EXPERIENCE.JOB4_DESCRIPTION' | translate }}</p>
           <ul class="responsibilities">
-            <li *ngFor="let responsibility of experienceTranslations.job3Responsibilities">{{ responsibility }}</li>
+            <li *ngFor="let responsibility of experienceTranslations.job4Responsibilities">{{ responsibility }}</li>
           </ul>
           <div class="tech-stack">
             <span>Angular</span>

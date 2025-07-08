@@ -34,6 +34,12 @@ export class ExperienceComponent implements OnInit {
     job3Period: '',
     job3Description: '',
     job3Responsibilities: [],
+     // Experiencia 4
+    job4Title: '',
+    job4Company: '',
+    job4Period: '',
+    job4Description: '',
+    job4Responsibilities: [],
     // Proyectos
     projectsTitle: '',
     project1Title: '',
@@ -84,6 +90,12 @@ export class ExperienceComponent implements OnInit {
       'EXPERIENCE.JOB3_PERIOD',
       'EXPERIENCE.JOB3_DESCRIPTION',
       'EXPERIENCE.JOB3_RESPONSIBILITIES',
+       // Experiencia 4
+      'EXPERIENCE.JOB4_TITLE',
+      'EXPERIENCE.JOB4_COMPANY',
+      'EXPERIENCE.JOB4_PERIOD',
+      'EXPERIENCE.JOB4_DESCRIPTION',
+      'EXPERIENCE.JOB4_RESPONSIBILITIES',
       // Proyectos
       'EXPERIENCE.PROJECTS_TITLE',
       'EXPERIENCE.PROJECT1_TITLE',
@@ -119,6 +131,12 @@ export class ExperienceComponent implements OnInit {
         job3Period: translations['EXPERIENCE.JOB3_PERIOD'],
         job3Description: translations['EXPERIENCE.JOB3_DESCRIPTION'],
         job3Responsibilities: this.translateService.instant('EXPERIENCE.JOB3_RESPONSIBILITIES').split('|'),
+         // Experiencia 4
+        job4Title: translations['EXPERIENCE.JOB4_TITLE'],
+        job4Company: translations['EXPERIENCE.JOB4_COMPANY'],
+        job4Period: translations['EXPERIENCE.JOB4_PERIOD'],
+        job4Description: translations['EXPERIENCE.JOB4_DESCRIPTION'],
+        job4Responsibilities: this.translateService.instant('EXPERIENCE.JOB4_RESPONSIBILITIES').split('|'),
         // Proyectos
         projectsTitle: translations['EXPERIENCE.PROJECTS_TITLE'],
         project1Title: translations['EXPERIENCE.PROJECT1_TITLE'],

@@ -129,7 +129,7 @@ export class AboutComponent implements OnInit {
   // Método para obtener la ruta del CV según el idioma actual
   getCvPath(): string {
     return this.languageService.getCurrentLanguage() === 'es' 
-      ? 'assets/archivos/CV.pdf' 
+      ? 'assets/archivos/CVv.pdf' 
       : 'assets/archivos/CVen.pdf';
   }
 }
