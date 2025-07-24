@@ -198,19 +198,144 @@
         line-height: 1.6;
       }
       
-      .project-tech {
+      .project-tags-button {
         display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        
-        span {
-          padding: 5px 12px;
-          background-color: rgba(94, 53, 177, 0.1);
-          color: var(--primary-color);
-          border-radius: 20px;
-          font-size: 0.85rem;
-          font-weight: 500;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        width: 100%;
+
+        .project-tech {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 6px;
+          flex: 1;
+          align-items: center;
+          
+          span {
+            padding: 6px 12px;
+            background-color: rgba(94, 53, 177, 0.1);
+            color: var(--primary-color);
+            border-radius: 16px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            white-space: nowrap;
+            border: 1px solid rgba(94, 53, 177, 0.2);
+            transition: all 0.2s ease;
+            
+            &:hover {
+              background-color: rgba(94, 53, 177, 0.15);
+              transform: translateY(-1px);
+            }
+          }
         }
+
+        .modal-button {
+          flex-shrink: 0;
+          width: 36px !important;
+          height: 36px !important;
+          min-width: 36px !important;
+          background-color: rgba(94, 53, 177, 0.1) !important;
+          color: var(--primary-color) !important;
+          border-radius: 50% !important;
+          transition: all 0.3s ease;
+          border: 1px solid rgba(94, 53, 177, 0.2) !important;
+          cursor: pointer;
+          display: flex !important;
+          align-items: center !important;
+          justify-content: center !important;
+          
+          // Remover estilos por defecto de Angular Material
+          .mat-button-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+          }
+          
+          // Remover ripple effect overlay
+          .mat-button-ripple,
+          .mat-button-focus-overlay {
+            border-radius: 50% !important;
+          }
+
+          &:hover {
+            background-color: rgba(94, 53, 177, 0.2) !important;
+            transform: scale(1.1);
+            border-color: rgba(94, 53, 177, 0.4) !important;
+            box-shadow: 0 4px 12px rgba(94, 53, 177, 0.3);
+          }
+
+          &:active {
+            transform: scale(0.95);
+          }
+
+          // Estilos para el ícono
+          mat-icon {
+            font-size: 18px !important;
+            width: 18px !important;
+            height: 18px !important;
+            line-height: 18px !important;
+            font-weight: 600;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+          }
+          
+          .material-icons {
+            font-size: 18px !important;
+            line-height: 1 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Media query para pantallas medianas
+@media (max-width: 768px) {
+  .project-details {
+    .project-tags-button {
+      .project-tech {
+        span {
+          font-size: 0.75rem;
+          padding: 4px 10px;
+        }
+      }
+      
+      .modal-button {
+        width: 32px !important;
+        height: 32px !important;
+        min-width: 32px !important;
+        
+        mat-icon {
+          font-size: 16px !important;
+          width: 16px !important;
+          height: 16px !important;
+        }
+      }
+    }
+  }
+}
+
+// Media query para pantallas más pequeñas
+@media (max-width: 480px) {
+  .project-details {
+    .project-tags-button {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      
+      .project-tech {
+        width: 100%;
+      }
+      
+      .modal-button {
+        align-self: flex-end;
+        width: 34px !important;
+        height: 34px !important;
+        min-width: 34px !important;
       }
     }
   }

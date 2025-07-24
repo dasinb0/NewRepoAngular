@@ -185,14 +185,24 @@
 
   "PROJECTS_TITLE": "Algunos Proyectos en los que he trabajado",
   "PROJECT1_TITLE": "Portal Web Hospital",
-  "PROJECT1_DESCRIPTION": "Portal web full-stack para gestionar el Hospital, con características como gestion de turnos, seguimiento de estudios y caja.",
+  "PROJECT1_DESCRIPTION": "Portal web para gestionar el Hospital",
+  "PROJECT1_SUMMARY": "Plataforma integral para la gestión hospitalaria del Hospital de Clínicas UBA. Permite a pacientes y personal médico gestionar turnos, estudios, stock, finanzas e historias clínicas desde un único portal digital, optimizando la operación y experiencia del usuario.",
   "PROJECT2_TITLE": "Billetera virtual",
   "PROJECT2_DESCRIPTION": "Billetera virtual con sistema de transferencia, qr interoperables y sistema de prestamos.",
+  "PROJECT2_SUMMARY": "TelePagos es una billetera virtual que permite cobrar con QR desde cualquier billetera de Argentina o Brasil, con acreditación inmediata y comisiones bajas. Ofrece múltiples formas de cobro (QR, transferencia, link de pago) y gestión ágil de fondos desde app o web.",
   "PROJECT3_TITLE": "Wallet descentralizada",
   "PROJECT3_DESCRIPTION": "App descentralizada multi billetera.",
+  "PROJECT3_SUMMARY": "Aplicación web para gestionar wallets de Solana. Permite conectar múltiples wallets, ver balances y tokens SPL, enviar transferencias, consultar historial y administrar activos. Integra APIs de Shyft y usa Angular Material + Tailwind con arquitectura moderna standalone.",
   "PROJECT4_TITLE": "Ecommerce Nike",
   "PROJECT4_DESCRIPTION": "Visualización de productos y carrito de compras.",
+  "PROJECT4_SUMMARY": "E-commerce web de Nike enfocado en calzado deportivo. Incluye catálogo de productos, carrito de compras, sistema de login y diseño responsive. Desarrollado con HTML, CSS y JavaScript puro, con interfaz moderna y experiencia de usuario optimizada.",
+  "PROJECT5_TITLE": "TokenLytics",
+  "PROJECT5_DESCRIPTION": "Sistema para auditoria sobre consumo de IA",
+  "PROJECT5_SUMMARY": "TokenLytics es una plataforma empresarial para controlar y auditar el uso de IA como ChatGPT, Claude y otros. Registra cada operación, calcula costos en tiempo real, impone límites de uso, detecta anomalías y permite tomar decisiones estratégicas basadas en métricas. Incluye dashboard web, APIs, widgets integrables y configuración de políticas por rol o área.",
   "VIEW_PROJECT": "Ver Proyecto",
   "VIEW_CODE": "Ver Código"
+},
+"COMMON": {
+  "CLOSE": "Cerrar"
 }
   }

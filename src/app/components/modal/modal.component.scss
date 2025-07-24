@@ -1,0 +1,201 @@
+// Header del modal
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin: -24px -24px 0 -24px;
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  color: white;
+  border-radius: 8px 8px 0 0;
+
+  h2 {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+  }
+}
+
+.close-button {
+  color: white !important;
+  width: 40px;
+  height: 40px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50% !important;
+  
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+  }
+
+  .mat-icon {
+    font-size: 20px !important;
+    width: 20px !important;
+    height: 20px !important;
+    line-height: 20px !important;
+  }
+}
+
+// Contenido del modal
+.modal-content {
+  padding: 28px 32px 24px 32px !important;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-color);
+  background: var(--background-color);
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+.modal-actions {
+  padding: 20px 32px 28px 32px !important;
+  margin: 0 -24px -24px -24px;
+  background: var(--card-bg);
+  border-top: 1px solid var(--border-color);
+  gap: 14px;
+  justify-content: flex-end;
+  border-radius: 0 0 8px 8px;
+  display: flex;
+  align-items: center;
+}
+
+.action-btn {
+  min-width: 120px;
+  height: 40px;
+  border-radius: 8px;
+  font-weight: 500;
+  text-transform: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+
+  mat-icon {
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%) !important;
+  color: white !important;
+  border: none;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.3);
+  }
+}
+
+.code-btn {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+  color: white !important;
+  border: none;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.3);
+  }
+}
+
+.close-btn {
+  background: transparent !important;
+  color: var(--text-color) !important;
+  border: 2px solid var(--border-color) !important;
+
+  &:hover {
+    background: var(--gray-color) !important;
+    border-color: var(--border-color) !important;
+    color: var(--heading-color) !important;
+  }
+}
+
+// Estilo del contenedor del diálogo
+::ng-deep .mat-mdc-dialog-container {
+  border-radius: 12px !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+  overflow: hidden !important;
+  max-width: 650px !important;
+  width: 95vw !important;
+  min-height: 400px !important;
+}
+
+::ng-deep .mat-mdc-dialog-container .mdc-dialog__surface {
+  overflow: visible !important;
+}
+
+::ng-deep .mat-mdc-dialog-content {
+  padding: 0 !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+::ng-deep .mat-mdc-dialog-actions {
+  padding: 0 !important;
+}
+
+// Eliminar scrollbars completamente
+::ng-deep .mat-mdc-dialog-container {
+  overflow: hidden !important;
+  
+  .mdc-dialog__surface {
+    overflow: visible !important;
+  }
+  
+  .mdc-dialog__content {
+    overflow: visible !important;
+    max-height: none !important;
+  }
+}
+
+// Responsivo
+@media (max-width: 600px) {
+  .modal-header {
+    padding: 20px 20px 12px 20px;
+
+    h2 {
+      font-size: 1.25rem;
+    }
+  }
+
+  .modal-content {
+    padding: 20px !important;
+  }
+
+  .modal-actions {
+    padding: 12px 20px 30px 20px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    .action-btn {
+      width: 70%;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+// Clase personalizada para el panel del modal
+::ng-deep .custom-modal-panel {
+  overflow: hidden !important;
+  
+  .mat-mdc-dialog-container {
+    overflow: hidden !important;
+  }
+  
+  .mdc-dialog__surface {
+    overflow: visible !important;
+  }
+  
+  .mdc-dialog__content {
+    overflow: visible !important;
+    max-height: none !important;
+  }
+}

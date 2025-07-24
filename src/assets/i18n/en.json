@@ -159,7 +159,7 @@
   "BREADCRUMB_EXPERIENCE": "Experience",
   "WORK_EXPERIENCE": "Work Experience",
 
-  "JOB1_TITLE": "Desarrollador Fullstack Semi-Senior",
+  "JOB1_TITLE": "Semi-Senior Fullstack Developer",
   "JOB1_COMPANY": "Sooft Technology",
   "JOB1_PERIOD": "2025 - Present",
   "JOB1_DESCRIPTION": "I’m part of the Research and Development team, actively contributing to the creation of innovative, tailor-made solutions built from scratch. I'm involved throughout the entire project lifecycle—analysis, design, development, testing, documentation, deployment, and maintenance. My main stack includes Vue.js, Node.js, and MongoDB, with PostgreSQL used when relational databases are required. I optimize delivery times by leveraging AI-powered tools like the Cursor IDE and integrating LLMs to automate tasks, streamline proof-of-concept stages, and reduce MVP development time. I work closely with the team using GitHub and Slack to ensure smooth communication, efficient version control, and adherence to agile methodologies.",
@@ -183,16 +183,26 @@
   "JOB4_DESCRIPTION": "Participant in the migration of the legacy system developed in Visual Basic to a modern web portal. During this process, I collaborated in the analysis, design, and implementation of the new platform, ensuring an efficient transition and improving the usability, scalability, and maintenance of the system.",
   "JOB4_RESPONSIBILITIES": "Implementation of intuitive and adaptive interfaces|Optimization of user experience on web platforms|Development and maintenance of interactive modules|Collaboration in the design and structuring of the frontend",
   
-  "PROJECTS_TITLE": "Some Projects I've Worked On",
+ "PROJECTS_TITLE": "Some Projects I've Worked On",
   "PROJECT1_TITLE": "Hospital Web Portal",
-  "PROJECT1_DESCRIPTION": "Full-stack web portal for hospital management, with features such as appointment scheduling, study tracking, and cashier management.",
+  "PROJECT1_DESCRIPTION": "Web portal for hospital management.",
+  "PROJECT1_SUMMARY": "Comprehensive platform for the hospital management of Hospital de Clínicas UBA. Enables patients and medical staff to manage appointments, tests, inventory, finances, and medical records from a single digital portal, optimizing operations and user experience.",
   "PROJECT2_TITLE": "Virtual Wallet",
   "PROJECT2_DESCRIPTION": "Virtual wallet with transfer system, interoperable QR codes, and loan system.",
+  "PROJECT2_SUMMARY": "TelePagos is a virtual wallet that allows payments via QR from any wallet in Argentina or Brazil, with instant settlement and low fees. Offers multiple payment methods (QR, transfers, payment links) and agile fund management via app or web.",
   "PROJECT3_TITLE": "Decentralized Wallet",
   "PROJECT3_DESCRIPTION": "Decentralized multi-wallet app.",
+  "PROJECT3_SUMMARY": "Web application for managing Solana wallets. Allows users to connect multiple wallets, view balances and SPL tokens, send transfers, check history, and manage assets. Integrates Shyft APIs and uses Angular Material + Tailwind with a modern standalone architecture.", 
   "PROJECT4_TITLE": "Nike Ecommerce",
   "PROJECT4_DESCRIPTION": "Product display and shopping cart.",
+  "PROJECT4_SUMMARY": "Nike's e-commerce website focused on athletic footwear. Includes product catalog, shopping cart, login system, and responsive design. Developed with pure HTML, CSS, and JavaScript, featuring a modern UI and optimized user experience.", 
+  "PROJECT5_TITLE": "TokenLytics",
+  "PROJECT5_DESCRIPTION": "Auditing system for AI consumption.",
+  "PROJECT5_SUMMARY": "TokenLytics is an enterprise platform to monitor and audit the use of AI like ChatGPT, Claude, and others. Logs every operation, calculates real-time costs, enforces usage limits, detects anomalies, and supports strategic decisions based on metrics. Includes web dashboard, APIs, embeddable widgets, and role/area-based policy configuration.",
   "VIEW_PROJECT": "View Project",
   "VIEW_CODE": "View Code"
+},
+"COMMON": {
+  "CLOSE": "Close"
 }
   }

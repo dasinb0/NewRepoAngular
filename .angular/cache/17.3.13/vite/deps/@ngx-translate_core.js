@@ -30,7 +30,7 @@ import {
   ɵɵdirectiveInject,
   ɵɵgetInheritedFactory,
   ɵɵinject
-} from "./chunk-BMTGMQML.js";
+} from "./chunk-FJTXBAIZ.js";
 
 // node_modules/@ngx-translate/core/fesm2022/ngx-translate-core.mjs
 var TranslateLoader = class {

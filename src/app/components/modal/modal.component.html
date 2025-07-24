@@ -1,0 +1,24 @@
+<div class="modal-header">
+  <h2 mat-dialog-title>{{ data.titleKey | translate }}</h2>
+  <button mat-icon-button class="close-button" (click)="close()" aria-label="Cerrar">
+    <mat-icon>close</mat-icon>
+  </button>
+</div>
+
+<mat-dialog-content class="modal-content">
+  <p>{{ data.summaryKey | translate }}</p>
+</mat-dialog-content>
+
+<mat-dialog-actions class="modal-actions" align="end">
+  <a mat-raised-button color="primary" class="action-btn primary-btn" [href]="data.demo" target="_blank">
+    <mat-icon>visibility</mat-icon>
+    {{ 'EXPERIENCE.VIEW_PROJECT' | translate }}
+  </a>
+  <a mat-raised-button class="action-btn code-btn" [href]="data.repo" target="_blank">
+    <mat-icon>code</mat-icon>
+    {{ 'EXPERIENCE.VIEW_CODE' | translate }}
+  </a>
+  <button mat-stroked-button class="action-btn close-btn" (click)="close()">
+    {{ 'COMMON.CLOSE' | translate }}
+  </button>
+</mat-dialog-actions>
